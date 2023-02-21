@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+body > div {
+    padding: 30px 20px;
+}
+
+.menu a, .menu a:hover, .menu a:visited {
+    color: #252165;
+    text-decoration: none;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline;
+    border: 1px solid #c7bfc0;
+    padding: 5px 10px;
+}
+
+.form-div {
+    padding: 5px 10px;
+}
+
+.button {
+    background: #fec07f;
+    width: fit-content;
+    padding: 5px 20px;
+}
+
+p.success {
+    display: none;
+    margin-left: 5px;
+    color: #5fc341;
+}
+
+table.list-table th, table.list-table td {
+    border: 1px solid;
+    padding: 5px;
+}
+table.list-table {
+    width: 50%;
+}
+table.list-table th {
+    height: 50px;
+}
+
+.hint {
+    display: none;
+    color: #a94442;
+}

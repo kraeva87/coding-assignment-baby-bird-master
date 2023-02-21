@@ -1,0 +1,41 @@
+{
+    "name": "svetlana/study-project",
+    "description": "Тестовое задание",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Svetlana\\StudyProject\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Svetlana Kraeva",
+            "email": "kraeva87@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "ext-sqlite3": "*",
+        "symfony/console": "6.3.x-dev",
+        "symfony/orm-pack": "dev-main",
+        "symfony/runtime": "6.3.x-dev",
+        "symfony/http-foundation": "6.3.x-dev"
+    },
+    "scripts": {
+        "database-init": [
+            "Svetlana\\StudyProject\\Commands\\DatabaseInitCommand"
+        ],
+        "dev-server": "env php -S localhost:8080 -t www www/index.php"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.48"
+    }
+}
