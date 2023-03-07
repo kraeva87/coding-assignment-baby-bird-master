@@ -109,7 +109,7 @@ class Controller
      *
      * @return string
      */
-    protected function sendAction(): string
+    protected function sendAction(): void
     {
         // запись в базу $database->query()
         $request = Request::createFromGlobals();
@@ -121,6 +121,6 @@ class Controller
         if ($forms) $response = array('status' => 'success');
         else $response = array('status' => 'error');
         header('Content-Type: application/json; charset=utf-8');
-        return json_encode($response);
+        echo json_encode($response);
     }
 }
