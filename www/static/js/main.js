@@ -43,8 +43,9 @@ async function send_form() {
         },
         body: JSON.stringify(data)
     });
-    if (response.ok) {
-        console.log(response.json());
+    let result = await response.json();
+    if (result.status == 'ok') {
+        console.log(result);
         document.querySelector(".success").style.display = "block";
     } else {
         console.log("Ошибка HTTP: " + response.status);
